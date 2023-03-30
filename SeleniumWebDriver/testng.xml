@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!--    <test verbose="2" preserve-order="true" name="C:/Users/Asus/SelenuimWebDriverProject/SeleniumWebDriver">-->
+    <!--            <classes>-->
+    <!--            <class name="com.seleniumTests.AutoItFacebookPhotoUpload">-->
+    <!--                <methods>-->
+    <!--                    <include name="facebookLogin_Success"/>-->
+    <!--                    <include name="facebookPhotoVideoUpload_AutoIT"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <!--            <class name="com.seleniumTests.AutoItFileUpload">-->
+    <!--                <methods>-->
+    <!--                    <include name="fileUpload"/>-->
+    <!--                    <include name="fileUploadSendKeys"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <test name="chromeTest">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.seleniumTests.DateAndTime">
+                <methods>
+                    <include name="enterDateAndTime"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="edgeTest">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="com.seleniumTests.DragAndDrop">
+                <methods>
+                    <include name="dragAndDrop"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="edgeTest1">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="com.seleniumTests.ActionFacebookTest">
+                <methods>
+                    <parameter name="email" value="abhishek14kanojia@gmail.com"></parameter>
+                    <parameter name="pass" value="Abhi@2000"></parameter>
+                    <include name="actionClass_FacebookLoginScreen"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--    <class name="com.seleniumTests.FaceBookLoginTest">-->
+    <!--        <methods>-->
+    <!--            <include name="facebookLogin_Success"/>-->
+    <!--        </methods>-->
+    <!--    </class>-->
+    <!--            <class name="com.seleniumTests.FacebookTest">-->
+    <!--                <methods>-->
+    <!--                    <include name="facebookWebsite_RedirectOnToValidScreen"/>-->
+    <!--                    <include name="facebookWebsite_CreateNewAccountTest"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <!--            <class name="com.seleniumTests.FindFrameExecutor">-->
+    <!--                <methods>-->
+    <!--                    <include name="findingFrame_UsingJSExecutor"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <!--        </classes>-->
+</suite>
